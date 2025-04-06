@@ -1,6 +1,8 @@
 from flask import Flask,request,jsonify
 import util
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
 util.load_saved_artifacts()
 @app.route('/loc')
 def get_locations_names():
