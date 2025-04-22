@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>House Price Predictor</title>
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <div class="form-card">
+                <h1>🏡 House Price Predictor</h1>
+                <form id="priceForm">
+                    <div class="form-group">
+                        <label for="area">Area (in sq. ft.)</label>
+                        <input type="number" id="area" placeholder="Enter area in sq. ft." required min="100" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bhk">BHK</label>
+                        <select id="bhk" required>
+                            <option value="">Select BHK</option>
+                            <option value="1">1 BHK</option>
+                            <option value="2">2 BHK</option>
+                            <option value="3">3 BHK</option>
+                            <option value="4">4 BHK</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bathroom">Bathroom</label>
+                        <select id="bathroom" required>
+                            <option value="">Select Bathroom</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="uiLocation">Location</label>
+                        <select id="uiLocation" required>
+                            <option value="">Select Location</option>
+                        </select>
+                    </div>
+                    
+
+                    <button type="submit" class="estimate-btn" onclick="onEstimatePriceClicked()">Estimate Price</button>
+                </form>
+                <div id="result" class="price-display"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
