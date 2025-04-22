@@ -2,7 +2,8 @@ from flask import Flask,request,jsonify
 import util
 from flask_cors import CORS
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # This will allow all domains by default
+
 util.load_saved_artifacts()
 @app.route('/loc')
 def get_locations_names():
