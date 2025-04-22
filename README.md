@@ -7,6 +7,9 @@ A responsive web application that estimates house prices based on user inputs su
 ## 🚀 Demo
 
 ![Screenshot 2025-04-22 162506](https://github.com/user-attachments/assets/2457ca95-5e26-41e8-988f-1014a10692f8)
+
+
+
 ![Screenshot 2025-04-22 162434](https://github.com/user-attachments/assets/ca65eadb-847b-447c-a3db-8c8291f81eb4)
 
 
